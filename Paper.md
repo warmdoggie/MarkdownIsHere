@@ -40,4 +40,4 @@ the main contributions of this paper
 #### 2. noisy feature representation
 >To sum up, the feature representations of small objects are apt to suffer from the noise, hindering the subsequent detection.
 
-#### 3. low tolerance for bounding box perturbation and inadequate samples.(对边界盒扰动的低公差和样本不足)
+#### 3. low tolerance for bounding box perturbation and inadequate samples.(对边界盒扰动的低公差和样本不足
