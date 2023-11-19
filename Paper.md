@@ -10,7 +10,7 @@ Benchmark 在机器学习里的定义：
 来自Abstract
 >Then,to catalyze the development of SOD, we construct two large-scale Small Object Detection dAtasets(SODA), SODA-D and SODA-A, which focus on the **Driving and Aerial scenarios** respectively
 
-用两个数据集分别集中于驾驶和空中场景
+用两个数据集分别针对驾驶和空中场景
 #### convolutional neural networks 卷积神经网络
  
 ## I. Introduction
@@ -22,7 +22,7 @@ Benchmark 在机器学习里的定义：
 #### B. Comparisons With Previous Reviews
 before:
 >concentrate on either generic object detection or specific object detection task such as pedestrian detection
-
+大多数先前的综述(如表I所示)集中在通用目标检测[13],[14],[15]或特定目标检测任务，如行人检测[16],[17],文本检测[18],遥感图像中的检测[19],[20]和交通场景下的检测[21],[22]等。
 now:
 >we provide a systematic survey of small object detection and an understandable and highly structured taxonomy(分类法), which organizes SOD approaches into six major categories based on the techniques involved and is radically different from previous ones.
 
@@ -35,9 +35,13 @@ the main contributions of this paper
 ## II. REVIEW ON SMALL OBJECT DETECTION
 ### A. Main Challenges
 #### 1. object information loss
->Such information loss will scarcely impair the performance of large or medium-sized objects to a certain extent, considering that the final features still retain enough information of them. Unfortunately, this is fatal for small objects, because the detection head can **hardly give accurate predictions** on top of the highly structural representations, in which the weak signals of small objects were almost wiped out.
+   >Such information loss will scarcely impair the performance of large or medium-sized objects to a certain extent, considering that the final features still retain enough information of them. Unfortunately, this is fatal for small objects, because the detection head can **hardly give accurate predictions** on top of the highly structural representations, in which the weak signals of small objects were almost wiped out.
 
 #### 2. noisy feature representation
->To sum up, the feature representations of small objects are apt to suffer from the noise, hindering the subsequent detection.
+   >To sum up, the feature representations of small objects are apt to suffer from the noise, hindering the subsequent detection.
 
-#### 3. low tolerance for bounding box perturbation and inadequate samples.(对边界盒扰动的低公差和样本不足
+#### 3. low tolerance for bounding box perturbation and inadequate samples.(对边界框扰动的低容忍度和样本不足)
+   >Union(IoU) metric was adopted to evaluate the accuracy. 
+   >As shown inFig. 1, a slight deviation (6 pixels along the diagonal direction)of predicted box for a small object causes significant drop onIoU (from 100% to 32.5%) compared to medium and large objects (56.6% and 71.8%). Meanwhile, a greater variance (say, 12 pixels) further exacerbates the situation, and the IoU drops to poorly 8.7% for small objects
+   ![Fig.1](D:\桌面\Fig.1.png)
+   
